@@ -1,12 +1,8 @@
 #ifndef POSE_H
 #define POSE_H
 
-#define E 0
-#define N 1
-#define W 2
-#define S 3
-#define Right +1
-#define Left -1
+enum Orientation { WEST, NORTH, EAST, SOUTH };
+enum Turn_Direction { LEFT = -1, RIGHT = +1 };
 
 class Pose
 {    
@@ -16,6 +12,7 @@ public:
     int o;
 
     Pose();
+    Pose(int x, int y, int o);
 };
 
 #endif // POSE_H
