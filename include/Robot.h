@@ -1,7 +1,10 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-enum Turn_Direction { LEFT = -1, RIGHT = +1 };
+#include "Simulator.h"
+#include "Types.h"
+
+class Simulator;
 
 class Robot
 {
@@ -17,6 +20,13 @@ public:
      * @brief Robot Default constructor
      */
     Robot();
+
+    /**
+     * @brief Robot This constructor creates the robot object and automatically adds it to the provided simulator
+     * @param s The simulator that we want to insert the robot into
+     * @param p Initial pose of the robot in the simulator
+     */
+    Robot(Simulator s, Pose p);
 
     // Public methods
 

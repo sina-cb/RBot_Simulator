@@ -1,8 +1,6 @@
 #ifndef POSE_H
 #define POSE_H
 
-enum Orientation { WEST, NORTH, EAST, SOUTH };
-
 class Pose
 {    
 private:

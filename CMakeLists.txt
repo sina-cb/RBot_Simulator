@@ -61,6 +61,7 @@ set(HDRs
 	include/Pose.h
 	include/Robot.h
 	include/Simulator.h
+	include/Types.h
 )
 
 include_directories (

@@ -1,11 +1,14 @@
-#include "Pose.h"
-#include "Robot.h"
-#include <vector>
-
-using namespace std;
-
 #ifndef SIMULATOR_H
 #define SIMULATOR_H
+
+#include "Pose.h"
+#include "Robot.h"
+#include "Types.h"
+#include <vector>
+using namespace std;
+
+class Robot;
+
 class Simulator
 {
 private:
@@ -24,6 +27,13 @@ public:
      * @brief Simulator Default constructor
      */
     Simulator();
+
+    /**
+     * @brief Simulator Constructor to initialize the boundaries of the simulator while creating the object
+     * @param max_x Upper bound for the X axis
+     * @param max_y Upper bound for the Y axis
+     */
+    Simulator(int max_x, int max_y);
 
     // Public methods
     /**
