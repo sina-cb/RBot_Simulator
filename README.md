@@ -8,4 +8,4 @@ The aim of this project is to teach basic C++ concepts using a project which aim
 - To develop your project, you can use Qt Project IDE (It can be downloaded from http://www.qt.io/developers/)
 
 ## Questions?
-- Contact me at sina [dot] cb [at] (G)mail [dot] com
+- Contact me at sina [dot] cb [at] Gmail [dot] com
