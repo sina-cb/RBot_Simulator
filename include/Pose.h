@@ -2,16 +2,28 @@
 #define POSE_H
 
 enum Orientation { WEST, NORTH, EAST, SOUTH };
-enum Turn_Direction { LEFT = -1, RIGHT = +1 };
 
 class Pose
 {    
-public:
+private:
     int x;
     int y;
-    int o;
+    int o; // Theta
 
+public:
+    // Constructors
+
+    /**
+     * @brief Pose Default constructor which sets all of the parameters to 0
+     */
     Pose();
+
+    /**
+     * @brief Pose Constructor with value inputs
+     * @param x X parameter
+     * @param y Y parameter
+     * @param o Theta parameter
+     */
     Pose(int x, int y, int o);
 };
 
